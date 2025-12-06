@@ -1,0 +1,455 @@
+.about-hero {
+    background: rgba(25, 118, 210, 0.08);
+    border: 1.5px solid #e3f2fd;
+    border-radius: 24px;
+    padding: 48px 40px;
+    margin-bottom: 48px;
+    text-align: center;
+    animation: fadeInUp 1s cubic-bezier(.77,0,.18,1) 0.1s both;
+}
+
+.about-hero h2 {
+    margin: 0 0 16px 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.about-hero p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* Основная информация */
+.about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 48px;
+}
+
+.about-content,
+.about-values {
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+
+.about-content h3,
+.about-values h3 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+    color: #111;
+    letter-spacing: 0.04em;
+}
+
+.about-content p {
+    font-size: 1.05em;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 16px;
+}
+
+.about-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Ценности */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.value-card {
+    background: #fff;
+    border: 1.5px solid #eaeaea;
+    border-radius: 12px;
+    padding: 16px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.value-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.1);
+}
+
+.value-icon {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.value-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.05em;
+    font-weight: 600;
+    color: #111;
+}
+
+.value-card p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* Направления деятельности */
+.business-areas {
+    margin-bottom: 48px;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.3s both;
+}
+
+.business-areas h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+}
+
+.area-card {
+    background: #fff;
+    border: 1.5px solid #eaeaea;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.area-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.12);
+}
+
+.area-icon {
+    font-size: 2.5em;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.area-card h4 {
+    margin: 0 0 12px 0;
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #111;
+}
+
+.area-card p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+/* Временная шкала */
+.milestones {
+    margin-bottom: 48px;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.4s both;
+}
+
+.milestones h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background: #1976d2;
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-date,
+.timeline-content {
+    width: 48%;
+}
+
+.timeline-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #1976d2;
+    padding: 0 20px;
+}
+
+.timeline-content {
+    background: #fff;
+    border: 1.5px solid #eaeaea;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.timeline-content h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #111;
+}
+
+.timeline-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border: 3px solid #1976d2;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/* Реквизиты */
+.company-details {
+    margin-bottom: 48px;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.5s both;
+}
+
+.company-details h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+}
+
+.detail-card {
+    background: #fff;
+    border: 1.5px solid #eaeaea;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s;
+}
+
+.detail-card:hover {
+    box-shadow: 0 4px 16px rgba(25, 118, 210, 0.1);
+}
+
+.detail-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 1em;
+    font-weight: 600;
+    color: #1976d2;
+    letter-spacing: 0.02em;
+}
+
+.detail-card p {
+    margin: 0;
+    color: #333;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.detail-card a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.detail-card a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+/* Сертификаты */
+.certifications {
+    margin-bottom: 40px;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.6s both;
+}
+
+.certifications h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 16px;
+}
+
+.cert-item {
+    display: flex;
+    gap: 12px;
+    background: rgba(25, 118, 210, 0.05);
+    border: 1px solid #e3f2fd;
+    border-radius: 12px;
+    padding: 16px;
+    align-items: flex-start;
+}
+
+.cert-icon {
+    font-size: 1.4em;
+    color: #1976d2;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.cert-item p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.5;
+}
+
+/* Адаптивность */
+@media (max-width: 1100px) {
+    .about-main {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-item {
+        flex-direction: column !important;
+        align-items: stretch;
+    }
+
+    .timeline-date,
+    .timeline-content {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .timeline-item::before {
+        display: none;
+    }
+
+    .timeline-date {
+        background: #f5f5f5;
+        border-radius: 8px;
+        padding: 12px;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-hero {
+        padding: 32px 24px;
+    }
+
+    .about-hero h2 {
+        font-size: 1.8em;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .certifications-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-hero {
+        padding: 20px 16px;
+        margin-bottom: 24px;
+    }
+
+    .about-hero h2 {
+        font-size: 1.4em;
+    }
+
+    .about-hero p {
+        font-size: 1em;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-card {
+        padding: 12px;
+    }
+
+    .timeline-date {
+        font-size: 1.1em;
+    }
+
+    .detail-card {
+        padding: 12px;
+    }
+
+    .cert-item {
+        padding: 12px;
+        gap: 8px;
+    }
+}

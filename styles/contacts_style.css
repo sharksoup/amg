@@ -1,0 +1,338 @@
+.contacts-hero {
+    background: rgba(25, 118, 210, 0.08);
+    border: 1.5px solid #e3f2fd;
+    border-radius: 24px;
+    padding: 48px 40px;
+    margin-bottom: 36px;
+    text-align: center;
+    animation: fadeInUp 1s cubic-bezier(.77,0,.18,1) 0.1s both;
+}
+
+.contacts-hero h2 {
+    margin: 0 0 16px 0;
+    font-size: 2.2em;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.contacts-hero p {
+    margin: 0;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contacts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 48px auto;
+    padding: 0 20px;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.2s both;
+}
+
+.contact-info-block {
+    background: #fff;
+    border: 1.5px solid #eaeaea;
+    border-radius: 18px;
+    padding: 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-info-block h3 {
+    margin: 0 0 24px 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: #111;
+    text-align: center;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+    align-items: center;
+    text-align: center;
+}
+
+.info-item:last-child {
+    margin-bottom: 0;
+}
+
+.info-icon {
+    font-size: 1.8em;
+    flex-shrink: 0;
+}
+
+.info-item h4 {
+    margin: 0 0 6px 0;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #111;
+}
+
+.info-item p {
+    margin: 0;
+    color: #555;
+    font-size: 1.05em;
+    line-height: 1.5;
+}
+
+.info-item a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.info-item a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+.map-container {
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(25, 118, 210, 0.1);
+    border: 1.5px solid #eaeaea;
+}
+
+/* Секция команды */
+.team-section {
+    margin: 48px auto 48px auto;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.3s both;
+}
+
+.team-section h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.team-card {
+    background: #fff;
+    border: 1.5px solid #eaeaea;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+    overflow: visible;
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(25, 118, 210, 0.12);
+}
+
+.team-avatar-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    background: #f0f0f0;
+    border-radius: 50%;
+    margin: 0 auto 16px auto;
+    border: 2px solid #eaeaea;
+}
+
+.team-card h4 {
+    margin: 0 0 8px 0;
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #111;
+}
+
+.team-position {
+    margin: 0 0 12px 0;
+    color: #1976d2;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+
+.team-contact {
+    margin: 0;
+    color: #555;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.team-contact a {
+    color: #1976d2;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s;
+}
+
+.team-contact a:hover {
+    color: #1565c0;
+    text-decoration: underline;
+}
+
+/* Форма обратной связи */
+.feedback-section {
+    background: rgba(25, 118, 210, 0.05);
+    border: 1.5px solid #e3f2fd;
+    border-radius: 18px;
+    padding: 40px;
+    margin-bottom: 40px;
+    animation: fadeInUp 1.2s cubic-bezier(.77,0,.18,1) 0.4s both;
+}
+
+.feedback-section h3 {
+    text-align: center;
+    font-size: 1.35em;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #111;
+    font-size: 1.05em;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px 16px;
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Inter', Arial, sans-serif;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #fff;
+    color: #111;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1976d2;
+    box-shadow: 0 0 0 3px rgba(25, 118, 210, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submit-btn {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    background: #1976d2;
+    color: #fff;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 16px rgba(25, 118, 210, 0.2);
+}
+
+.submit-btn:hover {
+    background: #1565c0;
+    box-shadow: 0 4px 32px rgba(25, 118, 210, 0.3);
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+    .contact-info-block {
+        padding: 24px;
+    }
+
+    .feedback-section {
+        padding: 24px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 18px;
+    }
+}
+
+@media (max-width: 600px) {
+    .contacts-hero {
+        padding: 20px 16px;
+        margin-bottom: 24px;
+    }
+
+    .contacts-hero h2 {
+        font-size: 1.4em;
+    }
+
+    .contacts-hero p {
+        font-size: 1em;
+    }
+
+    .contact-info-block {
+        padding: 16px;
+    }
+
+    .contact-info-block h3 {
+        font-size: 1.2em;
+        margin-bottom: 16px;
+    }
+
+    .info-item {
+        margin-bottom: 16px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .team-card {
+        padding: 16px;
+    }
+
+    .team-avatar {
+        font-size: 2.5em;
+    }
+
+    .feedback-section {
+        padding: 16px;
+    }
+
+    .feedback-form {
+        max-width: 100%;
+    }
+}

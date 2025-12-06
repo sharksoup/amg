@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты — ООО "АМГ"</title>
+    <link rel="stylesheet" href="styles/main_style.css">
+    <link rel="stylesheet" href="styles/contacts_style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-nav">
+            <img src="img/logo1.png" alt="Логотип АМГ" class="logo">
+            <h1>АМГ</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О компании</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacts-hero">
+            <h2>Свяжитесь с нами</h2>
+            <p>Мы готовы ответить на все ваши вопросы и помочь в выборе решения</p>
+        </section>
+
+        <section class="contacts-container">
+            <!-- Информация об офисе -->
+            <div class="contact-info-block">
+                <h3>Офис компании</h3>
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <h4>Адрес</h4>
+                        <p>ООО "АМГ"<br>
+                        Россия, г. Челябинск<br>
+                        ул. Елькина, д. 92А</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <h4>Телефон</h4>
+                        <p><a href="tel:+74917522000">+7 (491) 752-20-00</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">✉️</span>
+                    <div>
+                        <h4>Электронная почта</h4>
+                        <p><a href="mailto:info@amg-lab.ru">info@amg-lab.ru</a></p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="info-icon">🕐</span>
+                    <div>
+                        <h4>Режим работы</h4>
+                        <p>Пн–Пт: 9:00–18:00<br>
+                        Сб–Вс: выходной</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Команда -->
+        <section class="team-section">
+            <h3>Наша команда</h3>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="img/blank_avatar.webp" alt="Иван Петров" class="team-avatar-img">
+                    <h4>Выродов Сергей Юрьевич</h4>
+                    <p class="team-position">Генеральный директор</p>
+                    <p class="team-contact">
+                        <a href="mailto:">example@gmail.com</a><br>
+                        <a href="tel:+74917522001">+7 (900) 777-77-77</a>
+                    </p>
+                </div>
+
+                <div class="team-card">
+                    <img src="img/blank_avatar.webp" alt="Сергей Ковалев" class="team-avatar-img">
+                    <h4>Кучкин Иван Сергеевич</h4>
+                    <p class="team-position">Ведущий инженер</p>
+                    <p class="team-contact">
+                        <a href="mailto:">example@gmail.com</a><br>
+                        <a href="tel:+74917522002">+7 (900) 777-77-77</a>
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="feedback-section">
+            <h3>Отправить сообщение</h3>
+            <form class="feedback-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя *</label>
+                    <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Тема сообщения *</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Ваш вопрос">
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение *</label>
+                    <textarea id="message" name="message" required placeholder="Подробно опишите ваш вопрос..." rows="5"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="img/logo1.png" alt="Логотип АМГ" class="logo">
+        </div>
+        <p>&copy; 2025 ООО "АМГ". Все права защищены.</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
